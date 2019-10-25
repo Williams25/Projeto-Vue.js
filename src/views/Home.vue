@@ -24,7 +24,9 @@
     </section>
     <hr />
     <app-contato />
-
+    
+    <app-floatbutton />
+    
     <app-footer />
   </div>
 </template>
@@ -36,7 +38,10 @@ h2 {
   font-weight: 700;
   color: #192a56;
 }
-
+span {
+  color: #192a56;
+  font-weight: bolder;
+}
 .produt_h3,
 .sobre_h3,
 .contato_h3,

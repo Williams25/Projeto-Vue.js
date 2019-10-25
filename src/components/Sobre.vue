@@ -5,8 +5,8 @@
         <img src="../assets/sobre.jpg" alt />
       </div>
       <p>
-        A Focus Desenvolvimento é uma empresa focada em desenvolvimento de softwaes de gestão pública, que atua no mercado há 10 anos, oferecendo produtos e serviços de qualidade. Atualmente, seus sistemas são utilizados em diversos setores da área pública do Brasil. A Focus possui um grande diferencial das outras empresas de desenvolvimento: capacidade de atender às necessidades de seus clientes no prazo requerido.
-        A equipe de desenvolvimento conta com profissionais altamente qualificados, o que garante soluções sólidas que não demandam de grandes manutenções, facilitando o dia-a-dia de trabalho na esfera pública. Além de uma equipe de suporte para auxilio de clientes e suas dúvidas em relação à utilização dos sistemas.
+        A <span>Focus Desenvolvimento</span> é uma empresa focada em desenvolvimento de softwaes de gestão pública, que atua no mercado há 10 anos, oferecendo produtos e serviços de qualidade. Atualmente, seus sistemas são utilizados em diversos setores da área pública do Brasil. A Focus possui um grande diferencial das outras empresas de desenvolvimento: capacidade de atender às necessidades de seus clientes no prazo requerido.
+        A equipe de desenvolvedores conta com profissionais altamente qualificados, o que garante soluções sólidas que não demandam de grandes manutenções, facilitando o dia-a-dia de trabalho na esfera pública. Além de oferecer uma equipe de suporte para auxilio de clientes e suas dúvidas em relação à utilização dos sistemas.
       </p>
     </div>
   </section>
@@ -43,8 +43,12 @@ p {
   line-height: 1.5rem;
   text-align: justify;
 }
+span{
+  color: #192a56;
+  font-weight: bolder;
+}
 .img_sobre img {
-  width: 95%;
+  width: 100%;
   height: 350px;
   padding: 1%;
   border-radius: 23px;

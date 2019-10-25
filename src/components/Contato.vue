@@ -9,23 +9,23 @@
         allowfullscreen
       ></iframe>
     </div>
-    <v-row class="form" align="center" justify="center">
+    <div class="form_c">
+      <v-row class="form" align="center" justify="center">
       <v-col cols sm md>
-        
         <v-card class="elevation-12 shadow">
-         <v-toolbar dark flat>
-            <v-toolbar-title color="#000">Entre em contato para duvidas ou sujestões</v-toolbar-title>
+          <v-toolbar dark flat>
+            <v-toolbar-title color="#000">Entre em contato em caso de dúvidas ou sugestões</v-toolbar-title>
             <v-spacer></v-spacer>
           </v-toolbar>
           <v-card-text>
             <v-form>
               <v-text-field id="email" label="Email" name="email" type="email" v-model="nome"></v-text-field>
 
-              <v-col cols="12" md="6">
+              <v-col cols="12">
                 <v-textarea
                   outlined
                   name="input-7-4"
-                  label="Duvidas ou sujestões"
+                  label="Dúvidas ou sugestões"
                   v-model="duvidas"
                 ></v-textarea>
               </v-col>
@@ -33,24 +33,27 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-col cols="6" sm="1">
+            <div class="button">
+              <v-col cols="12">
               <v-btn dark @click="enviaDados">Enviar</v-btn>
 
               <v-snackbar v-model="snackbar" :multi-line="multiLine">
                 <p>{{ text }}</p>
               </v-snackbar>
             </v-col>
+            </div>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
+    </div>
     <div class="contato_t">
       <div class="item_contato">
         <h3>Telefones para contato</h3>
         <p>(16) 3253-5592</p>
         <p>(16) 99196-3192</p>
       </div>
-      <hr>
+      <hr />
       <div class="item_contato">
         <h3>Email para contato</h3>
         <p>suporte@focussp.com.br</p>
@@ -92,7 +95,7 @@ export default {
 };
 </script>
 <style scoped>
-hr{
+hr {
   width: 0.7px;
   box-shadow: inset 0 0 0 gold, 0 0 2px rgba(0, 0, 0, 0.9);
 }
@@ -110,6 +113,10 @@ iframe {
 }
 .shadow {
   margin-top: 4%;
+  transition: 0.4s;
+  /* box-shadow: inset 0 0 0 gold, 0 0 2px rgba(0, 0, 0, 0.9); */
+}
+iframe:hover {
   transition: 0.4s;
   box-shadow: inset 0 0 0 gold, 0 0 2px rgba(0, 0, 0, 0.9);
 }
@@ -129,10 +136,18 @@ iframe {
   height: auto;
   padding: 1%;
 }
-.item_contato p{
+.item_contato p {
   padding: 10px;
   font-size: 1.2em;
   line-height: 1.5rem;
   text-align: justify;
+}
+.form_c{
+  width: 100%;
+}
+@media (max-width: 450px){
+  hr{
+    display: none;
+  }
 }
 </style>

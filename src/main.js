@@ -11,6 +11,8 @@ import Sobre from '@/components/Sobre'
 import Carreira from '@/components/Carreira'
 import Contato from '@/components/Contato'
 import Footer from '@/components/Footer'
+import FloatButton from '@/components/FloatButton'
+
 // CRIANDO TAGS PERSONALIZADAS PARA COMPONENTS 
 Vue.component('app-topo', Topo)
 Vue.component('app-produto', Produtos)
@@ -18,6 +20,7 @@ Vue.component('app-sobre', Sobre)
 Vue.component('app-carreira', Carreira)
 Vue.component('app-contato', Contato)
 Vue.component('app-footer', Footer)
+Vue.component('app-floatbutton', FloatButton)
 
 Vue.config.productionTip = false;
 

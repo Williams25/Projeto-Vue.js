@@ -4,38 +4,46 @@
       <v-col cols sm md>
         <div class="texto_c">
           <p>
-            <span>Venha fazer parte da equipe Focus</span>.
-            Nos envie seu curriculo entraremos em contato em breve!
+            Venha fazer parte da
+            <span>Equipe Focus</span>.
+            Envie seu currículo e retornaremos em breve!
           </p>
         </div>
         <v-card class="elevation-12 shadow">
+          <div class="form_c">
           <v-toolbar dark flat>
             <v-toolbar-title color="#000">Trabalhe conosco</v-toolbar-title>
             <v-spacer></v-spacer>
           </v-toolbar>
-          <v-card-text>
-            <v-form>
-              <v-text-field label="Nome completo" name="nome" type="text" v-model="nome"></v-text-field>
+            <v-card-text>
+              <v-form>
+                <v-text-field label="Nome completo" name="nome" type="text" v-model="nome"></v-text-field>
 
-              <v-text-field id="email" label="Email" name="email" type="email" v-model="email"></v-text-field>
+                <v-text-field id="email" label="Email" name="email" type="email" v-model="email"></v-text-field>
 
-              <v-file-input label="Selecione seu curriculo"></v-file-input>
+                <v-file-input label="Selecione seu curriculo"></v-file-input>
 
-              <v-col cols="12" md="6">
-                <v-textarea outlined name="input-7-4" label="Descreva sobre suas abilidades" v-model="abilidade"></v-textarea>
+                <v-col cols="12">
+                  <v-textarea
+                    outlined
+                    name="input-7-4"
+                    label="Descreva sobre suas abilidades"
+                    v-model="abilidade"
+                  ></v-textarea>
+                </v-col>
+              </v-form>
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-col cols="12">
+                <v-btn dark @click="enviaDados">Enviar</v-btn>
+
+                <v-snackbar v-model="snackbar" :multi-line="multiLine">
+                  <p>{{ text }}</p>
+                </v-snackbar>
               </v-col>
-            </v-form>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-col cols="6" sm="1">
-              <v-btn dark @click="enviaDados">Enviar</v-btn>
-
-              <v-snackbar v-model="snackbar" :multi-line="multiLine">
-                <p>{{ text }}</p>
-              </v-snackbar>
-            </v-col>
-          </v-card-actions>
+            </v-card-actions>
+          </div>
         </v-card>
       </v-col>
     </v-row>
@@ -53,16 +61,17 @@ export default {
     text: "",
     drawer: null,
     nome: "",
-    email: "", 
-    abilidade: "",
+    email: "",
+    abilidade: ""
   }),
   methods: {
     enviaDados() {
-      if (this.nome != "" &&
-          this.nome != null &&
-          this.email != "" &&
-          this.email != null) {
-        
+      if (
+        this.nome != "" &&
+        this.nome != null &&
+        this.email != "" &&
+        this.email != null
+      ) {
         this.snackbar = true;
         this.text = "Curriculo enviado com sucesso!";
         this.nome = this.email = this.abilidade = "";
@@ -75,6 +84,9 @@ export default {
 };
 </script>
 <style scoped>
+.container{
+  width: 100%;
+}
 .texto_c {
   display: flex;
   justify-content: center;
@@ -88,5 +100,8 @@ export default {
 }
 .shadow {
   margin-top: 7%;
+}
+.form_c {
+  width: 100%;
 }
 </style>

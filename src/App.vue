@@ -5,12 +5,13 @@
 </template>
 
 <style>
-html body{
+html body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-section{
+section {
   padding: 30px;
 }
 hr {
