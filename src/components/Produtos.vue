@@ -1,63 +1,64 @@
 <template>
-  <div>
-    <section class="container_p produto">
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/logo.png" alt />
-        </div>
-        <h3>app</h3>
-          <p>
-         O aplicativo móvel (Cartão Cidadão) é o melhor opção para entrar em contato diretamente com o cidadão e verificar informações que o ajudarão no seu dia-a-dia.
-         Aplicativos disponiveis na <span> Play Store</span>
-        </p>
+  <section class="container_p produto">
+    <div class="item_produto" :key="img.urls" v-for="img in images">
+      <div class="img_produto">
+        <img :src="img.urls" alt />
       </div>
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/logo.png" alt />
-        </div>
-        <h3>educação</h3>
-        <p>
-          O Sistema Educação interage com todos os <span>Sistemas Focus</span> , gerenciando todo o Sistema de Educação dos Municipíos. 
-        </p>
-      </div>
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/saude.png" alt />
-        </div>
-        <h3>farmácia</h3>
-        <p>
-          O Sistema Farmácia garante o gerenciar todas as Unidades e Centros de Custo municipais com eficiência e agilidade. 
-        </p>
-      </div>
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/saude.png" alt />
-        </div>
-        <h3>saúde</h3>
-        <p>
-          O Sistema Saúde auxilia o gerenciamento de toda à área de saúde das prefeituras sobre seus cidadãos. Possui integridade com todos os outros <span>sistemas FOCUS </span>(Farmácia, Vacina, Social, Educação, Mobile).
-       </p>
-      </div>
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/logo.png" alt />
-        </div>
-        <h3>social</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, esse animi vitae cumque sint sit illum dolorum natus delectus, quo excepturi unde sequi tempore minus nesciunt molestiae incidunt doloremque nobis?</p>
-      </div>
-      <div class="item_produto">
-        <div class="img_produto">
-          <img src="../assets/logo.png" alt />
-        </div>
-        <h3>vacina</h3>
-        <p>
-          O Sistema Vacina foi desenvolvido para trabalhar com os Sistemas Saúde e Farmácia com o proprósito de melhorar a gestão da saúde municipal. 
-          </p>
-      </div>
-    </section>
-  </div>
+      <h3>{{img.titulo}}</h3>
+      <p>{{img.texto}}</p>
+    </div>
+  </section>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      images: [
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "app",
+          texto:
+            " O aplicativo móvel (Cartão Cidadão) é o " +
+            "melhor opção para entrar em contato diretamente com o cidadão e verificar informações que o ajudarão no seu dia-a-dia." +
+            " Aplicativos disponiveis na  Play Store"
+        },
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "Educação",
+          texto:
+            " O Sistema Educação interage com todos os" +
+            " Sistemas Focus, gerenciando todo o Sistema de Educação dos Municipíos."
+        },
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "Farmácia",
+          texto:
+            "O Sistema Farmácia garante o gerenciar todas as Unidades e Centros de Custo municipais com eficiência e agilidade."
+        },
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "Saúde",
+          texto:
+            " O Sistema Saúde auxilia o gerenciamento de toda à área de saúde das prefeituras sobre seus cidadãos. Possui integridade com todos os outros " +
+            "sistemas FOCUS(Farmácia, Vacina, Social, Educação, Mobile)."
+        },
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "Social",
+          texto:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, esse animi vitae cumque sint sit."
+        },
+        {
+          urls: require("../assets/logo.png"),
+          titulo: "Vacina",
+          texto:
+            " O Sistema Vacina foi desenvolvido para trabalhar com os Sistemas Saúde e Farmácia com o proprósito de melhorar a gestão da saúde municipal."
+        }
+      ]
+    };
+  }
+};
+</script>
 <style scoped>
 h3 {
   font-family: "Courier New", Courier, monospace;
@@ -65,16 +66,16 @@ h3 {
   text-transform: uppercase;
 }
 
-p{
+p {
   font-family: sans-serif;
   font-size: 1rem;
-  text-align:center;
+  text-align: center;
   padding: 10px;
   line-height: 20px;
 }
-span{
+span {
   font-weight: bolder;
-  color:rgb(228, 137, 19);
+  color: rgb(228, 137, 19);
   text-transform: uppercase;
 }
 .container_p {

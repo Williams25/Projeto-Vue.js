@@ -1,6 +1,6 @@
 <template>
   <a href="#topo">
-    <img src="../assets/keyboard_arrow_up-24px.svg" alt="" />
+    <img src="../assets/keyboard_arrow_up-24px.svg" alt />
   </a>
 </template>
 <script>
@@ -9,11 +9,6 @@ export default {
     return {
       teste: false
     };
-  },
-  methods: {
-    openBurguer() {
-      this.teste = true
-    }
   }
 };
 </script>

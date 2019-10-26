@@ -20,53 +20,16 @@
       <div id="side-menu" class="side-nav" v-show="openBurguer">
         <i class="btn-close" @click="closeSlideMenu">&times;</i>
         <ul>
-          <li>
-          <router-link to="/" @click="closeSlideMenu">Inicio</router-link>
-        </li>
-        <li>
-          <a href="#produto" @click="closeSlideMenu">Produto</a>
-        </li>
-        <li>
-          <a href="#sobre" @click="closeSlideMenu">Sobre</a>
-        </li>
-        <li>
-          <a href="#carreira" @click="closeSlideMenu">Carreira</a>
-        </li>
-        <li>
-          <a href="#contato" @click="closeSlideMenu">Contato</a>
-        </li>
-
-        <li>
-          <router-link to="/" @click="closeSlideMenu">Cliente</router-link>
-        </li>
-        <li>
-          <router-link to="/about" @click="closeSlideMenu">Central</router-link>
-        </li>
+          <li :key="menu.item" v-for="menu in menu">
+            <router-link :to="menu.rota">{{menu.item}}</router-link>
+          </li>
         </ul>
       </div>
-      <!-- BURGUER -->
-      <ul class="lista_menu">
-        <li>
-          <router-link to="/">Inicio</router-link>
-        </li>
-        <li>
-          <a href="#produto">Produto</a>
-        </li>
-        <li>
-          <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#carreira">Carreira</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
+      <!-- FIM BURGUER -->
 
-        <li>
-          <router-link to="/">Cliente</router-link>
-        </li>
-        <li>
-          <router-link to="/">Central</router-link>
+      <ul class="lista_menu">
+        <li :key="menu.item" v-for="menu in menu">
+          <router-link :to="menu.rota">{{menu.item}}</router-link>
         </li>
       </ul>
     </nav>
@@ -77,7 +40,37 @@ export default {
   data() {
     return {
       openBurguer: false,
-      burguer: true
+      burguer: true,
+      menu: [
+        {
+          item: "inicio",
+          rota: "/"
+        },
+        {
+          item: "produto",
+          rota: "/"
+        },
+        {
+          item: "sobre",
+          rota: "/"
+        },
+        {
+          item: "carreira",
+          rota: "/"
+        },
+        {
+          item: "contato",
+          rota: "/"
+        },
+        {
+          item: "cliente",
+          rota: "/"
+        },
+        {
+          item: "central",
+          rota: "/about"
+        }
+      ]
     };
   },
   methods: {
