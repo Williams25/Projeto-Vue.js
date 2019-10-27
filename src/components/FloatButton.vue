@@ -3,15 +3,7 @@
     <img src="../assets/keyboard_arrow_up-24px.svg" alt />
   </a>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      teste: false
-    };
-  }
-};
-</script>
+
 <style scoped>
 a {
   text-decoration: none;

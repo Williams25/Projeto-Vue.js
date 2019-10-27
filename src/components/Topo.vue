@@ -202,6 +202,9 @@ i {
     transition: 1s;
     color: gold;
   }
+  .side-nav ul{
+    padding-bottom: 10%;
+  }
   .lista_menu {
     display: none;
   }
