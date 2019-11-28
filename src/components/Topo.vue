@@ -21,7 +21,7 @@
         <i class="btn-close" @click="closeSlideMenu">&times;</i>
         <ul>
           <li :key="menu.item" v-for="menu in menu">
-            <router-link :to="menu.rota">{{menu.item}}</router-link>
+            <a :href="menu.rota" @click="closeSlideMenu">{{menu.item}}</a>
           </li>
         </ul>
       </div>
@@ -29,7 +29,7 @@
 
       <ul class="lista_menu">
         <li :key="menu.item" v-for="menu in menu">
-          <router-link :to="menu.rota">{{menu.item}}</router-link>
+          <a :href="menu.rota">{{menu.item}}</a>
         </li>
       </ul>
     </nav>
@@ -43,31 +43,31 @@ export default {
       burguer: true,
       menu: [
         {
-          item: "inicio",
+          item: "Inicio",
           rota: "/"
         },
         {
-          item: "produto",
+          item: "Produto",
+          rota: "#produto"
+        },
+        {
+          item: "Sobre",
+          rota: "#sobre"
+        },
+        {
+          item: "Carreira",
+          rota: "#carreira"
+        },
+        {
+          item: "Contato",
+          rota: "#contato"
+        },
+        {
+          item: "Cliente",
           rota: "/"
         },
         {
-          item: "sobre",
-          rota: "/"
-        },
-        {
-          item: "carreira",
-          rota: "/"
-        },
-        {
-          item: "contato",
-          rota: "/"
-        },
-        {
-          item: "cliente",
-          rota: "/"
-        },
-        {
-          item: "central",
+          item: "Central",
           rota: "/about"
         }
       ]
