@@ -5,7 +5,7 @@
         <div class="texto_c">
           <p>
             Venha fazer parte da
-            <span>Equipe Focus</span>.
+            <span>Equipe</span>.
             Envie seu currículo e retornaremos em breve!
           </p>
         </div>

@@ -8,7 +8,7 @@
     <app-produto />
 
     <section class="sobre_h3" id="sobre">
-      <h2>Sobre a Empresa</h2>
+      <h2>Sobre</h2>
     </section>
     <hr />
     <app-sobre />

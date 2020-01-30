@@ -50,13 +50,13 @@
     <div class="contato_t">
       <div class="item_contato">
         <h3>Telefones para contato</h3>
-        <p>(16) 3253-5592</p>
-        <p>(16) 99196-3192</p>
+        <p>(16) xxxx-xxxx</p>
+        <p>(16) xxxx-xxxx</p>
       </div>
       <hr />
       <div class="item_contato">
         <h3>Email para contato</h3>
-        <p>suporte@focussp.com.br</p>
+        <p>xxxxxxxx</p>
       </div>
     </div>
   </section>

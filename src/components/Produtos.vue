@@ -16,43 +16,39 @@ export default {
       images: [
         {
           urls: require("../assets/logo.png"),
-          titulo: "app",
+          titulo: "Lorem Ipsum 1",
           texto:
-            " O aplicativo móvel (Cartão Cidadão) é o " +
-            "melhor opção para entrar em contato diretamente com o cidadão e verificar informações que o ajudarão no seu dia-a-dia." +
-            " Aplicativos disponiveis na  Play Store"
+            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
           urls: require("../assets/logo.png"),
-          titulo: "Educação",
+          titulo: "Lorem Ipsum 2",
           texto:
-            " O Sistema Educação interage com todos os" +
-            " Sistemas Focus, gerenciando todo o Sistema de Educação dos Municipíos."
+            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
           urls: require("../assets/logo.png"),
-          titulo: "Farmácia",
+          titulo: "Lorem Ipsum 3",
           texto:
-            "O Sistema Farmácia garante o gerenciar todas as Unidades e Centros de Custo municipais com eficiência e agilidade."
+            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
           urls: require("../assets/logo.png"),
-          titulo: "Saúde",
+          titulo: "Lorem Ipsum 4",
           texto:
-            " O Sistema Saúde auxilia o gerenciamento de toda à área de saúde das prefeituras sobre seus cidadãos. Possui integridade com todos os outros " +
-            "sistemas FOCUS(Farmácia, Vacina, Social, Educação, Mobile)."
+            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
         {
           urls: require("../assets/logo.png"),
-          titulo: "Social",
+          titulo: "Lorem Ipsum 5",
           texto:
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, esse animi vitae cumque sint sit."
         },
         {
           urls: require("../assets/logo.png"),
-          titulo: "Vacina",
+          titulo: "Lorem Ipsum 6",
           texto:
-            " O Sistema Vacina foi desenvolvido para trabalhar com os Sistemas Saúde e Farmácia com o proprósito de melhorar a gestão da saúde municipal."
+            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         }
       ]
     };

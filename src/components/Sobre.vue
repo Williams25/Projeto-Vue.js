@@ -5,8 +5,7 @@
         <img src="../assets/sobre.jpg" alt />
       </div>
       <p>
-        A <span>Focus Desenvolvimento</span> é uma empresa focada em desenvolvimento de softwaes de gestão pública, que atua no mercado há 10 anos, oferecendo produtos e serviços de qualidade. Atualmente, seus sistemas são utilizados em diversos setores da área pública do Brasil. A Focus possui um grande diferencial das outras empresas de desenvolvimento: capacidade de atender às necessidades de seus clientes no prazo requerido.
-        A equipe de desenvolvedores conta com profissionais altamente qualificados, o que garante soluções sólidas que não demandam de grandes manutenções, facilitando o dia-a-dia de trabalho na esfera pública. Além de oferecer uma equipe de suporte para auxilio de clientes e suas dúvidas em relação à utilização dos sistemas.
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
     </div>
   </section>
